@@ -1,0 +1,90 @@
+.bg{
+    background-color: bisque;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+li{
+    text-decoration: none;
+    display: block;
+}
+
+.note{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+button{
+    padding: 3px;
+    margin: 3px;
+    border-radius: 20px;
+}
+.gg{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    height: 400px;
+}
+input{
+    padding: 10px;
+    border-radius: 40px;
+}
+/* #todo{
+    background-color: aliceblue;
+    width: 20px;
+    height: 60px;
+    padding: 30px;
+    margin: 20px;
+} */
+#show-todo {
+    display: none;
+  }
+  
+  
+/* Flexbox layout for task items */
+ul#todo li {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between checkbox and button */
+    padding: 10px 20px;
+    background-color: aliceblue;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Align the checkbox to the start (left) */
+.task-checkbox {
+    margin-right: 10px; /* Space between checkbox and task text */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Align the delete button to the end (right) */
+.delete-btn {
+    margin-left: auto; /* Push the delete button to the far right */
+    background-color: #ff6347; /* Tomato color for delete button */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add hover effect to the delete button */
+.delete-btn:hover {
+    background-color: #ff4500; /* Darker red on hover */
+    text-decoration: n;
+}
+
+/* Style the overall container for the task list */
+ul#todo {
+    padding: 0; /* Remove default padding */
+    margin: 20px 0; /* Add some margin around the list */
+    width: 100%; /* Full width */
+}
+/* Add a line-through when the task is marked as completed */
+li.completed {
+    text-decoration: line-through; /* Strike-through effect */
+    color: gray; /* Optional: Change the text color to gray */
+}
